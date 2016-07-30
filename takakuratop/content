@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <title>お問い合わせフォーム</title>
+    <link rel="stylesheet" href="takakuratop.css" type="text/css">
+  </head>
+  <body>
+    <!DOCTYPE html>
+    <html lang="ja">
+      <head>
+        <meta charset="UTF-8">
+        <title>TAKAKURATOP</title>
+        <link rel="stylesheet" href="takakuratop.css" type="text/css">
+      </head>
+      <body>
+        <section>
+          <div class="header">
+            <ul>
+              <li>Home</li>
+              <li>About</li>
+              <li>Work</li>
+              <li ><a href="#smoothplay3">Contact</a></li>
+            </ul>
+          </div>
+        </section>
+
+
+        <section>
+          <div class="main">
+          </div>
+        </section>
+
+
+    <section>
+      <!-- <form action="/my-handling-form-page" method="post">
+        <div>
+          <label for="name">お名前：<label>
+          <input tipe="text" id="name" />
+        </div>
+        <div>
+          <label for="title">件名：<label>
+          <input tipe="text" id="title" />
+        </div>
+        <div>
+          <label for="messege">本文：<label>
+          <textarea id="messege"></textarea>
+        </div>
+      </form> -->
+    </section>
+  </body>
+</html>

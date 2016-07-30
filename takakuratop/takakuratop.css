@@ -1,19 +1,23 @@
 /*list-styleプロパティを用いて、全体のliの黒点を取り除いてください*/
 
 .header {
-  height: 44px;
-  background-color: #DAFFE7;
+  position: fixed;
+  top:0px;
+  left:0px;
+  width: 100%;
+  height: 45px;
+  background-color: #ffebcd;
   vertical-align: middle;
 
 }
 
-.menu {
+.header {
   text-align: right;
 }
-.menu li{
+.header li{
   display: inline-block;
 }
-.menu li:after {
+.header li:after {
   content: "|";
     margin: 0 10px 0 15px;
     color: #ccc
@@ -21,16 +25,11 @@
 
 .sns {
   text-align: center;
-
-
 }
-
 .sns li{
   display: inline-block;
   margin-right: 10px;
-
 }
-
 .sns img {
   width: 50px;
   vertical-align:middle;
@@ -39,8 +38,11 @@
 
 .main {
   width: 100%;
-  height:1090px;
-  background-color: #ccc;
+  height:315px;
+  margin-top:45px;
+  background-image: url(./img/damask.png);
+  background-repeat: repeat-x;
+
 }
 
 .footer {
@@ -51,10 +53,14 @@
 }
 .main img{
   width: 100%;
+
 }
 
 
 .topbanner {
+  background-image: url(./img/damask.png);
+  background-repeat: repeat-x;
+
 
 }
 
@@ -143,3 +149,61 @@
   width:300px;
   float:right;
 }
+
+.contact {
+  width: 100%;
+  height: 100px;
+  text-align: center;
+}
+
+.footer {
+  bottom: 0px;
+  width:100%;
+  height:200px;
+  background-color: #ffebcd;
+}
+
+.contact {
+margin-bottom: 50px;
+}
+.contact h2{
+margin: 30px;
+}
+
+.mailad {
+  border: 1px solid #ddd;
+  padding: 20px 40px;
+  background-color: #eee;
+  margin: 50px;
+}
+
+/* --- お問い合わせフォーム --- */
+/* デザインカスタマイズ */
+div.wpcf7 { background:#fafafa; border:1px solid #ddd; padding:0px; -moz-border-radius:10px; -khtml-border-radius:10px; -webkit-border-radius:10px; border-radius:10px; margin:0 0 30px 0; }
+div.wpcf7 p { padding:20px 20px 0; margin:0; font-size:11px; }
+div.wpcf7 input, .wpcf7 textarea { border:1px solid #ccc; padding:8px; font-size:14px; }
+div.wpcf7 textarea { width:97.5%; height:300px; }
+div.wpcf7 input.wpcf7-submit {
+   cursor:pointer; color:#fff; font-weight:bold; font-size:14px; width:200px; height:45px; margin:0 auto; display:block;
+   -moz-border-radius:5px; -khtml-border-radius:5px; -webkit-border-radius:5px; border-radius:5px;
+   background:#333; box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.5), inset 0px 32px 0px -12px #808080; border:1px solid #666;
+}
+div.wpcf7 input.wpcf7-submit:hover { background:#006080; box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.5), inset 0px 32px 0px -12px #007ea8; border:1px solid #006080; }
+.wpcf7 input.wpcf7-submit:active { box-shadow:none; bottom:-2px; position:relative; }
+.wpcf7 input:focus, .wpcf7 textarea:focus { border:1px solid #009de1; }
+.wpcf7-captchac { border:1px solid #ccc; }
+
+
+/* エラー個所をわかりやすく表示 */
+.wpcf7 .wpcf7-not-valid { background: #ffb6c1; }
+.wpcf7 span.wpcf7-not-valid-tip {font-size: 80%;}
+.wpcf7 .wpcf7-response-output {margin: 10px 0 0; padding: 8px 35px 8px 14px; text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+    -webkit-border-radius: 4px; -moz-border-radius: 4px; border-radius: 4px; }
+.wpcf7 .wpcf7-validation-errors {color: #B94A48; background-color: #F2DEDE; border: 1px solid #EED3D7;}
+.wpcf7 .wpcf7-mail-sent-ok {color: #3A87AD; background-color: #D9EDF7; border: 1px solid #BCE8F1;}
+
+/* 必須赤色表示 */
+.wpcf7 .required { color: #f00;}
+/* 任意緑色表示 */
+.wpcf7 .any{ color: #080;}
+ 
